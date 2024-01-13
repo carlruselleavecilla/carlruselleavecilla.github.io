@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+	box-sizing: border-box;
+
+	margin: 0em;
+	padding: 0em;
+
+	font-family: 'Arsenal', san-serif;
+	color: #f0f8ff;
+}
+body {
+	background: #24252a;
+
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+}
+
+/* Landing Page */
+
+.landing-page {
+	min-height: 100vh;
+}
+
+.navigation-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background: #1d1d1d;
+
+	height: 5em;
+}
+.logo {
+	cursor: pointer;
+
+	margin-left: 2.5em;
+}
+.logo > a {
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 2rem;
+}
+.navigation-list {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	width: 25em;
+
+	font-size: 1.15rem;
+}
+
+.first-container {
+	position: relative;
+	top: 2em;
+	left: 10em;
+
+	height: 35em;
+	width: 80%;
+}
+.first-image-container {
+	position: absolute;
+	top: 3em;
+	left: 7em;
+
+	height: 90%;
+}
+.first-image-container > img {
+	height: inherit;
+
+	border-radius: 2em;
+
+	box-shadow: 8px 16px 16px 8px rgba(0, 0, 0, 0.25);
+}
+.first-text-container {
+	position: absolute;
+	right: 0em;
+	bottom: 13em;
+
+	display: flex;
+	flex-direction: column;
+
+	height: auto;
+	width: 62%;
+}
+.text {
+	font-size: 3rem;
+	letter-spacing: 0.35rem;
+}
+.intro-text,
+.name-text {
+	font-family: 'Radley', serif;
+}
+.intro-text::after {
+	content: '';
+
+	position: absolute;
+	top: 0.65em;
+	left: 4em;
+
+	background: #f0f8ff;
+
+	height: 0.15em;
+	width: 11em;
+}
+.description-text::before {
+	content: '';
+
+	position: absolute;
+	top: 4.45em;
+	left: 0em;
+
+	background: #f0f8ff;
+
+	height: 0.25em;
+	width: 3.5em;
+}
+.description-text {
+	font-size: 2rem;
+
+	margin-left: 4em;
+}
+
+/* Skill Page */
+
+.skill-page {
+	position: relative;
+
+	background: #1d1d1d;
+
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: auto;
+	width: 45.75%;
+
+	padding: 0.5em 0em;
+
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 4rem;
+	letter-spacing: 0.5em;
+}
+.left-skill-panel {
+	position: absolute;
+	left: -4.35em;
+	rotate: 90deg;
+}
+.right-skill-panel {
+	position: absolute;
+	right: -4.35em;
+	rotate: -90deg;
+}
+.second-container {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	height: 35em;
+	width: 60%;
+}
+.left-divider {
+	position: absolute;
+	top: 0em;
+	left: 0em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-end;
+
+	height: 100%;
+	width: 50%;
+
+	padding-right: 2em;
+
+	font-size: 2rem;
+}
+.right-divider {
+	position: absolute;
+	top: 0em;
+	left: 50.5%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+
+	height: 100%;
+	width: 50%;
+
+	padding-left: 2em;
+}
+.bar {
+	position: relative;
+
+	background: #24252a;
+
+	height: 1.5em;
+	width: 25em;
+}
+.filler {
+	position: absolute;
+	top: 0em;
+
+	background-color: #f0f8ff;
+
+	height: 1.5em;
+}
+.second-filler1 {
+	width: 75%;
+}
+.second-filler2 {
+	width: 50%;
+}
+.second-filler3 {
+	width: 75%;
+}
+.second-filler4 {
+	width: 25%;
+}
+.second-filler5 {
+	width: 0%;
+}
+
+/* SAW PAGE */
+
+.saw-container {
+	position: relative;
+	top: 2em;
+	left: 10em;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	height: 15em;
+	width: 80%;
+
+	margin-bottom: 4em;
+
+	text-align: center;
+}
+.title1 {
+	margin-bottom: 0.25em;
+
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 2.5rem;
+	letter-spacing: 0.15rem;
+
+	opacity: 0.75;
+}
+.trait-text {
+	margin-top: 0.25em;
+
+	font-size: 1.25rem;
+	letter-spacing: 0.15rem;
+}
+
+/* Hobby Page */
+
+.hobby-page {
+	position: relative;
+
+	background: #1d1d1d;
+
+	min-height: 100vh;
+}
+.left-hobby-panel {
+	position: absolute;
+	top: 4em;
+	left: -4.35em;
+	rotate: 90deg;
+}
+.right-hobby-panel {
+	position: absolute;
+	top: 4em;
+	right: -4.35em;
+	rotate: -90deg;
+}
+.third-container {
+	position: relative;
+	top: 4em;
+	left: 20em;
+
+	display: flex;
+
+	height: 35em;
+	width: 60%;
+}
+.block {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 5em;
+	width: 12em;
+
+	margin-left: 2em;
+}
+.block > img {
+	height: 13em;
+	width: 13em;
+
+	border-radius: 2em;
+
+	box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+.block-title {
+	margin-top: 1em;
+
+	font-family: 'Radley', serif;
+	font-size: 1.5rem;
+	letter-spacing: 0.25rem;
+}
+.third-block1 {
+	top: 8em;
+}
+.third-block2 {
+	top: 24em;
+}
+.third-block3 {
+	top: 8em;
+}
+.third-block4 {
+	top: 24em;
+}
+
+/* Career */
+
+.career-page {
+	position: relative;
+
+	min-height: 100vh;
+}
+.career-image {
+	height: 43.5em;
+	width: 50em;
+}
+.career-text {
+	position: absolute;
+	top: 3.5em;
+	left: 2em;
+
+	background: #24252a;
+	height: 1.25em;
+	width: 5.5em;
+
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 5rem;
+	letter-spacing: 0.5rem;
+	text-align: center;
+}
+.career-container {
+	position: absolute;
+	top: 5em;
+	right: 0.75em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 45%;
+}
+.career-title {
+	margin-bottom: 1em;
+
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 2.5rem;
+	letter-spacing: 0.25rem;
+}
+.career-paragraph {
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+}
+
+/* family page */
+
+.family-page {
+	position: relative;
+
+	background: #1d1d1d;
+
+	min-height: 100vh;
+}
+.family-collage {
+	position: absolute;
+	top: 3em;
+	left: 5em;
+	display: grid;
+	grid-template-rows: repeat(5, 7em);
+	grid-template-columns: repeat(3, 10em);
+
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+
+	height: 10em;
+	width: 25em;
+}
+.dadi {
+	background: url(../img/dadi.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	grid-area: 1 / 1 / 3 / 2;
+}
+.mama {
+	background: url(../img/mama.jpg);
+	background-size: cover;
+	background-position: center;
+	background-position-x: -3.5em;
+	background-repeat: no-repeat;
+
+	grid-area: 3 / 1 / 6 / 2;
+}
+.ate1 {
+	background: url(../img/ate1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	grid-area: 4 / 2 / 6 / 3;
+}
+.ako {
+	background: url(../img/ako.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	grid-area: 3 / 2 / 4 / 4;
+}
+.ate2 {
+	background: url(../img/ate2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	grid-area: 4 / 3 / 6 / 4;
+}
+.kyla {
+	background: url(../img/kyla.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	grid-area: 1 / 2 / 3 / 3;
+}
+.luna {
+	background: url(../img/luna.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	grid-area: 1 / 3 / 3 / 4;
+}
+
+.family-text-container {
+	position: absolute;
+	top: 2em;
+	right: 5em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 40em;
+	width: 50%;
+}
+.family-title {
+	margin-bottom: 1em;
+
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 3rem;
+}
+.family-text,
+.manalo-members,
+.alavarin-members {
+	font-size: 1.5rem;
+	letter-spacing: 0.15em;
+}
+.family-member {
+	display: flex;
+	justify-content: space-evenly;
+
+	width: 100%;
+
+	margin-top: 3em;
+}
+.manalo-title,
+.alavarin-title {
+	margin-bottom: 1em;
+
+	font-family: 'Rubik Doodle Shadow', system-ui;
+	font-size: 1.5rem;
+
+	text-align: center;
+}
